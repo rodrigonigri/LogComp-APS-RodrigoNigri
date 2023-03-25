@@ -15,8 +15,8 @@ Ela é baseada na linguagem python, mas com algumas diferenças, sendo elas ter 
 |---------------------------|---------------------------|
 | **hedpes** [הדפס] (print)        | printa um valor na tela   |
 | **im** [אם] (if)               | condicional               |
-| **acher** [אחר אם] (else)          | condicional               |
-| **acher im** [אחר] (else if)    | condicional               |
+| **acher** [אחר] (else)          | condicional               |
+| **acher im** [אחר אם] (else if)    | condicional               |
 | **bizman** [בזמן] (while)        | laço de repetição         |
 | **functzia** [פונקציה] (function)   | declaração de função      |
 | **lachzor** [לחזור] (return)      | retorna um valor          |
