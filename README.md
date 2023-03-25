@@ -7,24 +7,24 @@ A proposta desse projeto é criar uma linguagem de programação com todas as es
 # Minha Linguagem:
 A linguagem que eu criei se chama **צפת** (Tzfat ou Sefat) que é uma cidade de Israel que meu bisavô nasceu e viveu grande parte da sua vida. Além disso, a palavra **שפה** (Safa, derivação do nome da cidade) significa Linguagem em hebraico.
 
-Ela é baseada na linguagem python, mas com algumas diferenças, como por exemplo, a utilização das chaves para abrir e fechar blocos de código ao invés de indentação.
+Ela é baseada na linguagem python, mas com algumas diferenças, sendo elas ter palavras em hebraico e também a utilização das chaves para abrir e fechar blocos de código ao invés de indentação.
 
 # Tabela de elementos da linguagem:
 
-| Elemento              | Descrição                 |
-|-----------------------|---------------------------|
-| hedpes (print)        | printa um valor na tela   |
-| im (if)               | condicional               |
-| acher (else)          | condicional               |
-| acher im (else if)    | condicional               |
-| bizman (while)        | laço de repetição         |
-| functzia (function)   | declaração de função      |
-| lachzor (return)      | retorna um valor          |
-| nachon (true)         | valor booleano verdadeiro |
-| kozev (false)         | valor booleano falso      |
-| lo (not)              | operador lógico negação   |
-| ve (and)              | operador lógico and       |
-| oh (or)               | operador lógico or        |
+| Elemento                  | Descrição                 |
+|---------------------------|---------------------------|
+| **hedpes** [הדפס] (print)        | printa um valor na tela   |
+| **im** [אם] (if)               | condicional               |
+| **acher** [אחר אם] (else)          | condicional               |
+| **acher im** [אחר] (else if)    | condicional               |
+| **bizman** [בזמן] (while)        | laço de repetição         |
+| **functzia** [פונקציה] (function)   | declaração de função      |
+| **lachzor** [לחזור] (return)      | retorna um valor          |
+| **nachon** [נכון] (true)         | valor booleano verdadeiro |
+| **kozev** [כוזב] (false)         | valor booleano falso      |
+| **lo** [לא] (not)              | operador lógico negação   |
+| **ve** [ו] (and)              | operador lógico and       |
+| **oh** [או] (or)               | operador lógico or        |
 
 
 
