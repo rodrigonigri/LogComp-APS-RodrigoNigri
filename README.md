@@ -33,21 +33,21 @@ Ela é baseada na linguagem python, mas com algumas diferenças, sendo elas ter 
 BLOCK = "{",  {COMMAND}, "}";
 COMMAND = ASSIGN | PRINT | BLOCK | WHILE | IF
 
-ASSIGN = IDENTIFIER, "=", OREXPR;
-PRINT = "hedpes", "(", OREXPR, ")";
-WHILE = "bizman", "(", OREXPR, ")", COMMAND;
-IF = "im", "(", OREXPR, ")", COMMAND |
-     "im", "(", OREXPR, ")", COMMAND, "acher", COMMAND;
+ASSIGN = IDENTIFIER, "=", OREXPRESSION;
+PRINT = "hedpes", "(", OREXPRESSION, ")";
+WHILE = "bizman", "(", OREXPRESSION, ")", COMMAND;
+IF = "im", "(", OREXPRESSION, ")", COMMAND |
+     "im", "(", OREXPRESSION, ")", COMMAND, "acher", COMMAND;
 
-OREXPR = ANDEXPR, {"oh", ANDEXPR};
-ANDEXPR = EQEXPR, {"ve", EQEXPR};
-EQEXPR = RELEXPR, {"==", RELEXPR};
-RELEXPR = EXPRESSION, {(">" | "<"), EXPRESSION};
+OREXPRESSION = ANDEXPRESSION, {"oh", ANDEXPRESSION};
+ANDEXPRESSION = EQEXPRESSION, {"ve", EQEXPRESSION};
+EQEXPRESSION = RELEXPRESSION, {"==", RELEXPRESSION};
+RELEXPRESSION = EXPRESSION, {(">" | "<"), EXPRESSION};
 EXPRESSION = TERM, {("+" | "-"), TERM} ;
 TERM = FACTOR, {("*" | "/"), FACTOR} ;
-FACTOR = ("+" | "-", "lo"), FACTOR | "(", OREXPR, ")" | NUMBER | IDENTIFIER | STRING | BOOLEAN;
+FACTOR = ("+" | "-", "lo"), FACTOR | "(", OREXPRESSION, ")" | NUMBER | IDENTIFIER | STRING | BOOLEAN;
 
-IDENTIFIER = VTYPE, ALPHACHAR, {CHAR};
+IDENTIFIER = VTYPE, ALPHABET, {CHAR};
 
 NUMBER = DIGIT, {DIGIT} ;
 DIGIT = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
@@ -56,8 +56,8 @@ BOOLEAN = "nachon" | "kozev";
 
 STRING = """, {CHAR | SPACE}, """; 
 
-CHAR = ALPHACHAR | DIGIT | "_";
-ALPHACHAR = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" ;
+CHAR = ALPHABET | DIGIT | "_";
+ALPHABET = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" ;
 SPACE = " ";
 
 VTYPE = "int" | "bool" | "string";
