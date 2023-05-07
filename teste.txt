@@ -1,0 +1,21 @@
+a = 1
+b = (2+1) * 2 / 12
+
+
+functzia soma(a,b){
+    lachzor a+b
+}
+
+c = nachon
+d = kozev
+e = nachon ve kozev oh nachon ve lo(kovev)
+
+d = (a == b) ve (c == 1)
+
+bizman (a == b){
+    im (a > b){
+        hedpes(1)
+    }
+    soma(a,b)
+}
+
