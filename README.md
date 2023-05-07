@@ -39,7 +39,7 @@ WHILE = "bizman", "(", OREXPRESSION, ")", COMMAND;
 IF = "im", "(", OREXPRESSION, ")", COMMAND |
      "im", "(", OREXPRESSION, ")", COMMAND, "acher", COMMAND;
 
-FUNCTION = "functzia", IDENTIFIER, "(", [IDENTIFIER, {",", IDENTIFIER}], ")", "{", {STATEMENT}, "}";
+FUNCTION = "functzia", IDENTIFIER, "(", [IDENTIFIER, {",", IDENTIFIER}], ")", "{", {STATEMENT}, "}", RETURN;
 RETURN = "lachzor", OREXPRESSION;
 CALL = IDENTIFIER, "(", [OREXPRESSION, {",", OREXPRESSION}], ")";
 
@@ -65,4 +65,20 @@ ALPHABET = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L"
 SPACE = " ";
 
 VTYPE = "int" | "bool" | "string";
+```
+
+## Como executar Flex e Bison:
+### Flex:
+Primeiro é necessário descomentar a função main() do arquivo tokens.l e depois executar os seguintes comandos:
+```
+flex -i -o tokens.yy.c tokens.l
+gcc -o tokens tokens.yy.c -lfl
+token < teste.txt
+```
+### Bison:
+Primeiro é necessário garantir que o arquivo tokens.l está compilado e que a função main() está comentada. Depois executar os seguintes comandos:
+```
+bison -dv parser.y
+gcc -o aa_parser parser.tab.c lex.yy.c
+aa_parser < teste.txt
 ```
