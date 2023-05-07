@@ -71,9 +71,9 @@ VTYPE = "int" | "bool" | "string";
 ### Flex:
 Primeiro é necessário descomentar a função main() do arquivo tokens.l e depois executar os seguintes comandos:
 ```
-flex -i -o tokens.yy.c tokens.l
-gcc -o tokens tokens.yy.c -lfl
-token < teste.txt
+flex tokens.l
+gcc -o aa_flex lex.yy.c
+aa_flex.exe < teste.txt
 ```
 ### Bison:
 Primeiro é necessário garantir que o arquivo tokens.l está compilado e que a função main() está comentada. Depois executar os seguintes comandos:
