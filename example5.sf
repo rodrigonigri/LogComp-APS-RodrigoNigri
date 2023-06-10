@@ -1,0 +1,42 @@
+hedpes("a ze: ")
+int a = likro()
+hedpes("b ze: ")
+int b = likro()
+
+hedpes(a)
+hedpes(b)
+
+im (a == 1) {
+    hedpes("a 1")
+} acher {
+    hedpes("a lo 1")
+}
+
+bizman (a < 10) {
+    hedpes(a)
+    a = a + 1
+}
+
+functzia int schum(int x, int y) {
+    lachzor x + y
+}
+
+hedpes(schum(a, b))
+
+im 1{
+    hedpes("nachon")
+}
+
+im lo 0{
+    hedpes("lo kozev")
+}
+
+im 0{
+    hedpes("lo hedpes")
+}acher{
+    hedpes("hedpes")
+}
+
+im 1 ve 1 {
+    hedpes("nachon ve nachon")
+}

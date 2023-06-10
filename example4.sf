@@ -1,0 +1,7 @@
+functzia int schum(int a, int b){ # schum = soma
+    lachzor a+b
+}
+
+int x = schum(1,2)
+hedpes(x)
+hedpes(schum(3,4))

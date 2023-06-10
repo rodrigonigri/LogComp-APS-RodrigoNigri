@@ -1,0 +1,7 @@
+int a = 20
+int i = 0
+
+bizman i < a{
+    hedpes(i)
+    i = i + 1
+}
