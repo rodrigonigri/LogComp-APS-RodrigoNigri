@@ -5,7 +5,7 @@
 A proposta desse projeto é criar uma linguagem de programação com todas as estruturas básicas, como: variáveis, condicionais, laços de repetição, funções...
 
 # Minha Linguagem:
-A linguagem que eu criei se chama **צפת** (Tzfat ou Sfat) que é uma cidade de Israel que meu bisavô nasceu e viveu grande parte da sua vida. Além disso, a palavra **שפה** (Safa, derivação do nome da cidade) significa Linguagem em hebraico.
+A linguagem que eu criei se chama **צפת** (Sfat) que é uma cidade de Israel que meu bisavô nasceu e viveu grande parte da sua vida. Além disso, a palavra **שפה** (Safa, derivação do nome da cidade) significa Linguagem em hebraico.
 
 Israel é reconhecido por sua excelência em tecnologia e inovação, dessa forma surgiu a ideia de criar uma linguagem de programação em hebraico.
 
