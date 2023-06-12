@@ -28,6 +28,51 @@ Israel é reconhecido por sua excelência em tecnologia e inovação, dessa form
 # Diagrama sintático:
 <img src="diagrama sintatico.png" alt="diagrama sintatico"/>
 
+# EBNF:
+```
+BLOCK = { STATEMENT } ;
+
+STATEMENT = ( λ | ASSIGNMENT | TYPE | PRINT | WHILE | IF | FUNCTION | RETURN | CALLFUNC ), "\n" ;
+
+ASSIGNMENT = IDENTIFIER, SETTING;
+
+CREATING = TYPE, IDENTIFIER, [ "=", RELEXPR ] ;
+
+TYPE = "int" | "string" ;
+
+SETTING = "=", RELEXPR ;
+
+PRINT = "hedpes", "(", RELEXPR, ")" ;
+
+WHILE = "bizman", RELEXPR, "{" "\n", BLOCK, "}" ;
+
+IF = "im", RELEXPR, "{", "\n", { STATEMENT }, "}", [ "acher", "{" "\n", BLOCK, "}" ], "}" ;
+
+FUNCTION = "functzia", TYPE, IDENTIFIER, "("[PARAMETER], ")", "{" "\n", BLOCK, "}";
+
+PARAMETER = TYPE, IDENTIFIER, { ",", TYPE, IDENTIFIER };
+
+RETURN = "lachzor", RELEXPR;
+
+CALLFUNC = IDENTIFIER, "(", [RELEXPR, {",", RELEXPR}] ,")";
+
+RELEXPR = EXPRESSION, { ("==" | ">" | "<"), EXPRESSION }
+
+EXPRESSION = TERM, { ("+" | "-" | "oh" | "."), TERM } ;
+
+TERM = FACTOR, { ("*" | "/" | "ve"), FACTOR } ;
+
+FACTOR = (("+" | "-" | "lo"), FACTOR) | NUMBER | STRING | "(", RELEXPR, ")" | IDENTIFIER, ["(", RELEXPR, {",", RELEXPR} ,")"] | ("likro", "(", ")") ;
+
+IDENTIFIER = LETTER, { LETTER | DIGIT | "_" } ;
+
+NUMBER = DIGIT, { DIGIT } ;
+
+LETTER = ( a | ... | z | A | ... | Z ) ;
+
+DIGIT = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
+```
+
 # Exemplos de código:
 ## Hello World:
 ```
